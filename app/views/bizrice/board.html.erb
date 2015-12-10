@@ -1,0 +1,10 @@
+<%= render partial: "dropdown" %>
+
+<% @posts.each do |p| %>
+<li><%=p.professor%> 교수님 / <%=p.title%> / <%=p.nickname %> / 
+<a href="/bizrice/sending/<%= p.id %>"> [밥 한끼 살게요!] </a>
+</li>
+<br>
+
+<% end %>
+<a href="/bizrice/write/<%= @lecture.id %>">밥 얻어 먹을래!</a> 
