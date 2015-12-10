@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root :to => 'bizrice#home'
+  root :to => "bizrice#index"
   
   get ":controller(/:action(/:id))"
   post ":controller(/:action(/:id))"
